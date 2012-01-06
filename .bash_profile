@@ -2,6 +2,8 @@ export PS1="\u \w: "
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 export NODE_PATH="/usr/local/lib/node_modules:$NODE_PATH"
 
+source ~/.scripts/git-completion.bash
+
 alias ll='ls -lAFhG'
 alias p4merge='/Applications/p4merge.app/Contents/Resources/launchp4merge'
 
