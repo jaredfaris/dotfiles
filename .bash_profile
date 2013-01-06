@@ -9,9 +9,6 @@ alias ll='ls -lAFhG'
 alias be='bundle exec'
 alias p4merge='/Applications/p4merge.app/Contents/Resources/launchp4merge'
 
-# git aliases
-alias gs='git status'
-
 [[ -f /opt/local/etc/bash_completion ]] && source /opt/local/etc/bash_completion
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
