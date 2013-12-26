@@ -9,7 +9,10 @@ alias ll='ls -lAFhG'
 alias be='bundle exec'
 alias p4merge='/Applications/p4merge.app/Contents/Resources/launchp4merge'
 
-[[ -f /opt/local/etc/bash_completion ]] && source /opt/local/etc/bash_completion
+# relies on `brew install git bash-completion`
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
